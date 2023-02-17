@@ -1,19 +1,29 @@
-<h1><a name="wasi_proposal_template">World wasi-proposal-template</a></h1>
+<h1><a name="example_world">World example-world</a></h1>
 <ul>
 <li>Imports:
 <ul>
-<li>interface <a href="#proposal_interface_name"><code>proposal-interface-name</code></a></li>
+<li>interface <a href="#example_dep_interface"><code>example-dep-interface</code></a></li>
+<li>interface <a href="#example_interface"><code>example-interface</code></a></li>
 </ul>
 </li>
 </ul>
-<h2><a name="proposal_interface_name">Import interface proposal-interface-name</a></h2>
+<h2><a name="example_dep_interface">Import interface example-dep-interface</a></h2>
+<hr />
+<h3>Types</h3>
+<h4><a name="example_dep_type"><code>type example-dep-type</code></a></h4>
+<p><code>u32</code></p>
+<p>
+## <a name="example_interface">Import interface example-interface</a>
 <p>Short interface description.</p>
 <p>Explanation for developers using the interface API. It should include an
 overview of the API as a whole as well as call out notable items in it,
 for example <a href="#example_api_type"><code>example-api-type</code></a> and <a href="#example_api_function"><code>example-api-function</code></a>.</p>
 <hr />
 <h3>Types</h3>
-<h4><a name="example_api_type"><code>record example-api-type</code></a></h4>
+<h4><a name="example_dep_type"><code>type example-dep-type</code></a></h4>
+<p><a href="#example_dep_type"><a href="#example_dep_type"><code>example-dep-type</code></a></a></p>
+<p>
+#### <a name="example_api_type">`record example-api-type`</a>
 <p>Short type description</p>
 <p>Explanation for developers using this type. It may be useful to give
 some examples of places in the API where the type is used, such as in
@@ -28,12 +38,12 @@ of precise behavior here.
 <h5>Record Fields</h5>
 <ul>
 <li>
-<p><a name="example_api_type.property0"><code>property0</code></a>: <code>u64</code></p>
-<p>A description of a property.
+<p><a name="example_api_type.field0"><code>field0</code></a>: <code>u64</code></p>
+<p>A description of a field.
 </li>
 <li>
-<p><a name="example_api_type.property1"><code>property1</code></a>: <code>string</code></p>
-<p>A description of another property.
+<p><a name="example_api_type.field1"><code>field1</code></a>: <code>string</code></p>
+<p>A description of another field.
 </li>
 </ul>
 <hr />
@@ -41,7 +51,8 @@ of precise behavior here.
 <h4><a name="example_api_function"><code>example-api-function: func</code></a></h4>
 <p>Short function description</p>
 <p>Explanation for developers using the API. This should describe the
-arguments which in this function are <code>arg0</code> and <code>arg1</code> and the return value.</p>
+arguments which in this function are <code>arg0</code>, <code>arg1</code>, and <code>arg2</code>, and the
+return value.</p>
 <details>
 <summary>Detailed specification</summary>
 Similar to the details section above, this is meant for more rigorous
@@ -53,6 +64,7 @@ later call, for example.
 <ul>
 <li><a name="example_api_function.arg0"><code>arg0</code></a>: <a href="#example_api_type"><a href="#example_api_type"><code>example-api-type</code></a></a></li>
 <li><a name="example_api_function.arg1"><code>arg1</code></a>: <code>string</code></li>
+<li><a name="example_api_function.arg2"><code>arg2</code></a>: <a href="#example_dep_type"><a href="#example_dep_type"><code>example-dep-type</code></a></a></li>
 </ul>
 <h5>Return values</h5>
 <ul>

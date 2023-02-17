@@ -15,7 +15,9 @@
 /// Explanation for developers using the interface API. It should include an
 /// overview of the API as a whole as well as call out notable items in it,
 /// for example `example-api-type` and `example-api-function`.
-default interface proposal-interface-name {
+default interface example-interface {
+    use example-dep.example-api.example-dep-interface.{example-dep-type}
+
     /// Short type description
     ///
     /// Explanation for developers using this type. It may be useful to give
@@ -30,16 +32,17 @@ default interface proposal-interface-name {
     /// of precise behavior here.
     /// </details>
     record example-api-type {
-        /// A description of a property.
-        property0: u64,
-        /// A description of another property.
-        property1: string,
+        /// A description of a field.
+        field0: u64,
+        /// A description of another field.
+        field1: string,
     }
 
     /// Short function description
     ///
     /// Explanation for developers using the API. This should describe the
-    /// arguments which in this function are `arg0` and `arg1` and the return value.
+    /// arguments which in this function are `arg0`, `arg1`, and `arg2`, and the
+    /// return value.
     ///
     /// <details>
     /// <summary>Detailed specification</summary>
@@ -48,5 +51,9 @@ default interface proposal-interface-name {
     /// implementation MUST do, such as never returning an earlier result from a
     /// later call, for example.
     /// </details>
-    example-api-function: func(arg0: example-api-type, arg1: string) -> result<example-api-type>
+    example-api-function: func(
+        arg0: example-api-type,
+        arg1: string,
+        arg2: example-dep-type,
+    ) -> result<example-api-type>
 }

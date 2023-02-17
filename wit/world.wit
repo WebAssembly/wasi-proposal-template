@@ -5,6 +5,6 @@
 // Proposals should remove these `//` commments, and edit the `world` name and
 // imports below to pull in their own `interface`s.
 
-default world wasi-proposal-template {
-    import proposal-interface-name: pkg.wasi-proposal-template.proposal-interface-name
+default world example-world {
+    import example-interface: pkg.example.example-interface
 }
