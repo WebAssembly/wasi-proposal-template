@@ -15,8 +15,8 @@
 /// Explanation for developers using the interface API. It should include an
 /// overview of the API as a whole as well as call out notable items in it,
 /// for example `example-api-type` and `example-api-function`.
-default interface example-interface {
-    use example-dep.example-api.example-dep-interface.{example-dep-type}
+interface example-interface {
+    use wasi:example-api-package/example-dep-interface.{example-dep-type}
 
     /// Short type description
     ///
