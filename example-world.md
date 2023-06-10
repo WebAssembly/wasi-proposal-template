@@ -2,18 +2,18 @@
 <ul>
 <li>Imports:
 <ul>
-<li>interface <a href="#example_dep_interface"><code>example-dep-interface</code></a></li>
-<li>interface <a href="#example_interface"><code>example-interface</code></a></li>
+<li>interface <a href="#wasi:example_api_package_example_dep_interface"><code>wasi:example-api-package/example-dep-interface</code></a></li>
+<li>interface <a href="#wasi:example_package_example_interface"><code>wasi:example-package/example-interface</code></a></li>
 </ul>
 </li>
 </ul>
-<h2><a name="example_dep_interface">Import interface example-dep-interface</a></h2>
+<h2><a name="wasi:example_api_package_example_dep_interface">Import interface wasi:example-api-package/example-dep-interface</a></h2>
 <hr />
 <h3>Types</h3>
 <h4><a name="example_dep_type"><code>type example-dep-type</code></a></h4>
 <p><code>u32</code></p>
 <p>
-## <a name="example_interface">Import interface example-interface</a>
+## <a name="wasi:example_package_example_interface">Import interface wasi:example-package/example-interface</a>
 <p>Short interface description.</p>
 <p>Explanation for developers using the interface API. It should include an
 overview of the API as a whole as well as call out notable items in it,

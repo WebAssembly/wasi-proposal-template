@@ -5,6 +5,8 @@
 // Proposals should remove these `//` commments, and edit the `world` name and
 // imports below to pull in their own `interface`s.
 
-default world example-world {
-    import example-interface: pkg.example.example-interface
+package wasi:example-package
+
+world example-world {
+    import example-interface
 }
