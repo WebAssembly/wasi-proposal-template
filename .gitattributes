@@ -1,2 +1,0 @@
-# A hack to enable some degree of syntax highlighting on GitHub. Should be removed if GitHub ever receives native support for Wit files.
-*.wit linguist-language=Rust
