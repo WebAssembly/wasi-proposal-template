@@ -16,11 +16,14 @@ A proposed [WebAssembly System Interface](https://github.com/WebAssembly/WASI) A
 
 ### Champions
 
+<!---
+Please limit to one champion per company or organization
+-->
 - [Champion 1]
 - [Champion 2]
 - [etc.]
 
-### Phase 4 Advancement Criteria
+### Portability Criteria
 
 TODO before entering Phase 2.
 
