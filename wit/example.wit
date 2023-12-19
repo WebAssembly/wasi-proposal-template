@@ -16,7 +16,7 @@
 /// overview of the API as a whole as well as call out notable items in it,
 /// for example `example-api-type` and `example-api-function`.
 interface example-interface {
-    use wasi:example-api-package/example-dep-interface.{example-dep-type}
+    use wasi:example-api-package/example-dep-interface.{example-dep-type};
 
     /// Short type description
     ///
@@ -55,5 +55,5 @@ interface example-interface {
         arg0: example-api-type,
         arg1: string,
         arg2: example-dep-type,
-    ) -> result<example-api-type>
+    ) -> result<example-api-type>;
 }
